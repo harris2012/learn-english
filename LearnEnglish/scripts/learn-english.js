@@ -23,28 +23,16 @@ function WelcomeController($scope, LearnEnglishService) {
         $scope.words = response.words;
     }
 
-    function word_skip_callback(response) {
-
-        word.hide = true;
-    }
-
-    function word_known_callback(response) {
-
-        word.hide = true;
-    }
-
-    function word_maybe_callback(response) {
-
-        word.hide = true;
-    }
-
     //有点印象
     $scope.maybe = function (word) {
 
         var request = {};
         request.word = word.english;
 
-        LearnEnglishService.word_maybe(request).then(word_maybe_callback)
+        LearnEnglishService.word_maybe(request).then(function (response) {
+
+            word.hide = true;
+        })
     }
 
     //完全不会
@@ -53,7 +41,10 @@ function WelcomeController($scope, LearnEnglishService) {
         var request = {};
         request.word = word.english;
 
-        LearnEnglishService.word_skip(request).then(word_skip_callback)
+        LearnEnglishService.word_skip(request).then(function (response) {
+
+            word.hide = true;
+        })
     }
 
     //这词我会
@@ -62,7 +53,10 @@ function WelcomeController($scope, LearnEnglishService) {
         var request = {};
         request.word = word.english;
 
-        LearnEnglishService.word_known(request).then(word_known_callback)
+        LearnEnglishService.word_known(request).then(function (response) {
+
+            word.hide = true;
+        })
     }
 
     //加载更多
