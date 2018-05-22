@@ -41,23 +41,23 @@ function WelcomeController($scope, LearnEnglishService) {
     //有点印象
     $scope.maybe = function (word) {
 
-        LearnEnglishService.maybe(word.english).then()
+        LearnEnglishService.word_maybe(word.english).then()
     }
 
     //完全不会
     $scope.skip = function (word) {
-        LearnEnglishService.skip(word.english).then()
+        LearnEnglishService.word_skip(word.english).then()
     }
 
     //这词我会
     $scope.known = function (word) {
-        LearnEnglishService.known(word.english).then()
+        LearnEnglishService.word_known(word.english).then()
     }
 
     //加载更多
     $scope.loadMore = function () {
 
-        LearnEnglishService.words().then(word_items_calback);
+        LearnEnglishService.word_items({}).then(word_items_calback);
     }
 
     LearnEnglishService.word_items({}).then(word_items_calback);
