@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -142,13 +143,13 @@
     <Compile Include="Repository\Entity\VocabularyEntity.cs" />
     <Compile Include="Repository\VocabularyRepository.cs" />
     <Compile Include="Request\ExamplesRequest.cs" />
-    <Compile Include="Request\KnwonRequest.cs" />
+    <Compile Include="Request\KnownRequest.cs" />
     <Compile Include="Request\MaybeRequest.cs" />
     <Compile Include="Request\SkipRequest.cs" />
     <Compile Include="Request\WordItemsRequest.cs" />
     <Compile Include="Vo\Example.cs" />
     <Compile Include="Response\ExamplesResponse.cs" />
-    <Compile Include="Response\KnwonResponse.cs" />
+    <Compile Include="Response\KnownResponse.cs" />
     <Compile Include="Response\MaybeResponse.cs" />
     <Compile Include="Response\ResponseBase.cs" />
     <Compile Include="Response\SkipResponse.cs" />

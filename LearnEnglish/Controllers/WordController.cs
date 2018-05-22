@@ -71,9 +71,9 @@ namespace LearnEnglish.Controllers
             return response;
         }
 
-        public SkipResponse Known(SkipRequest request)
+        public KnownResponse Known(KnownRequest request)
         {
-            SkipResponse response = new SkipResponse();
+            KnownResponse response = new KnownResponse();
 
             repository.Known(request.Word);
 
@@ -81,11 +81,9 @@ namespace LearnEnglish.Controllers
             return response;
         }
 
-        public SkipResponse Maybe(SkipRequest request)
+        public MaybeResponse Maybe(MaybeRequest request)
         {
-            SkipResponse response = new SkipResponse();
-
-            VocabularyRepository repository = new VocabularyRepository();
+            MaybeResponse response = new MaybeResponse();
 
             repository.Maybe(request.Word);
 

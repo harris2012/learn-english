@@ -23,17 +23,28 @@
     //有点印象
     $scope.maybe = function (word) {
 
-        LearnEnglishService.word_maybe(word.english).then()
+        var request = {};
+        request.word = word.english;
+
+        LearnEnglishService.word_maybe(request).then(word_maybe_callback)
     }
 
     //完全不会
     $scope.skip = function (word) {
-        LearnEnglishService.word_skip(word.english).then()
+
+        var request = {};
+        request.word = word.english;
+
+        LearnEnglishService.word_skip(request).then(word_skip_callback)
     }
 
     //这词我会
     $scope.known = function (word) {
-        LearnEnglishService.word_known(word.english).then()
+
+        var request = {};
+        request.word = word.english;
+
+        LearnEnglishService.word_known(request).then(word_known_callback)
     }
 
     //加载更多

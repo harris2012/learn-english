@@ -6,9 +6,8 @@ using System.Web;
 
 namespace LearnEnglish.Request
 {
-    public class KnwonRequest
+    public class KnownRequest
     {
-        [JsonProperty("word")]
         public string Word { get; set; }
     }
 }

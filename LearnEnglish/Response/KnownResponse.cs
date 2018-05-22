@@ -5,7 +5,7 @@ using System.Web;
 
 namespace LearnEnglish.Response
 {
-    public class KnwonResponse : ResponseBase
+    public class KnownResponse : ResponseBase
     {
     }
 }

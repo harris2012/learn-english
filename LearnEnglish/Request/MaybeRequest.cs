@@ -8,7 +8,6 @@ namespace LearnEnglish.Request
 {
     public class MaybeRequest
     {
-        [JsonProperty("word")]
         public string Word { get; set; }
     }
 }

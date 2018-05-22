@@ -8,7 +8,6 @@ namespace LearnEnglish.Request
 {
     public class SkipRequest
     {
-        [JsonProperty("word")]
         public string Word { get; set; }
     }
 }
