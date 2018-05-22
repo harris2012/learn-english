@@ -1,0 +1,15 @@
+[
+  {
+    "outputFileName": "scripts/learn-english.js",
+    "inputFiles": [
+
+      "scripts/_service.js",
+
+      "scripts/controllers/WelcomeController.js",
+      "scripts/controllers/WordController.js",
+
+      "scripts/_route.js",
+      "scripts/_app.js"
+    ]
+  }
+]

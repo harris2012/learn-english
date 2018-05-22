@@ -1,0 +1,62 @@
+﻿.footer {
+  border-top: 1px solid #eee;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.example {
+  margin-bottom: 10px;
+}
+.example .en,
+.example .cn {
+  margin-bottom: 5px;
+}
+.word-section {
+  padding: 10px;
+  border: 1px solid #d6caca;
+  margin-bottom: 10px;
+}
+.word-section:hover {
+  background: #fcfcfc;
+}
+.word-menu {
+  float: right;
+}
+.word-menu .menu-item {
+  float: left;
+  margin-left: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  color: #fff;
+  cursor: pointer;
+}
+.word-menu .menu-item.menu-toggle {
+  background: #9C27B0;
+}
+.word-menu .menu-item.menu-iknowit {
+  background: #5cb85c;
+}
+.word-menu .menu-item.menu-maybe {
+  background: #2196F3;
+}
+.word-menu .menu-item.menu-skip {
+  background: #aaa;
+}
+.word-examples {
+  border-top: 1px solid #eee;
+  margin-top: 10px;
+  padding-top: 10px;
+  height: 500px;
+  overflow-y: scroll;
+  /*&::-webkit-scrollbar-button {
+        background-color: #999;
+    }*/
+}
+.word-examples::-webkit-scrollbar {
+  width: 12px;
+}
+.word-examples::-webkit-scrollbar-track {
+  background: #bbb;
+}
+.word-examples::-webkit-scrollbar-thumb {
+  background: #555;
+}
